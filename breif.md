@@ -24,20 +24,25 @@ Example list states:
 
 Requesting the repos for an organisation:
 
-<ul`am8y7t54werl./>
+``` html
+<ul>
   <li>loading...</li>
 </ul>
+```
 
 After loading the repos:
 
+```html
 <ul>
   <li>repo name 1</li>
   <li>repo name 2</li>
   <li>repo name 3</li>
 </ul>
+```
 
 After clicking on a repo, while loading the issues:
 
+``` html
 <ul>
   <li>
     repo name 1
@@ -48,9 +53,11 @@ After clicking on a repo, while loading the issues:
   <li>repo name 2</li>
   <li>repo name 3</li>
 </ul>
+```
 
 After loading the issues for a repo:
 
+``` html
 <ul>
   <li>
     repo name 1
@@ -63,6 +70,7 @@ After loading the issues for a repo:
   <li>repo name 2</li>
   <li>repo name 3</li>
 </ul>
+```
 
 ## Considerations
 
