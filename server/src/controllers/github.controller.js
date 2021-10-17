@@ -1,21 +1,15 @@
-const axios = require("axios");
-
-const BASE_URL = "https://api.github.com";
-
-
-
-// Get repositories by org:
-// <https://api.github.com/orgs/nodejs/repos>
-
-// Get open issues by repository:
-// <https://api.github.com/repos/nodejs/reponame/issues?state=open>
+const { fetchReposData, fetchOpenIssuesByRepo } = require("../services/github.service.js")
 
 async function getReposByOrg(req, res) {
-    res.send("repo")
+    const { repo } = req.params;
+    const fetchReposDataResponse = await fetchReposData(repo);
+    res.json(fetchReposDataResponse)
 }
 
 async function issuesByRepo(req, res) {
-    res.send("issues")
+    const { parentrepo, reponame } = req.params;
+    const fetchOpenIssuesByRepoResponse = await fetchOpenIssuesByRepo(parentrepo, reponame);
+    res.json(fetchOpenIssuesByRepoResponse)
 }
 
 module.exports = {

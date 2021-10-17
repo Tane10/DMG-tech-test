@@ -4,9 +4,9 @@ const { getReposByOrg, issuesByRepo } = require("./controllers/github.controller
 
 const router = express.Router();
 
-router.get("/getrepos", getReposByOrg);
+router.get("/getrepos/:repo", getReposByOrg);
 
-router.get("/getissues", issuesByRepo);
+router.get("/getissues/:parentrepo/:reponame", issuesByRepo);
 
 module.exports = router;
 

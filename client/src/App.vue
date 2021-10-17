@@ -1,20 +1,20 @@
 <template>
   <v-app>
     <v-main>
-      <Login />
+      <Base />
     </v-main>
   </v-app>
 </template>
-
+ 
 <script lang="ts">
 import Vue from "vue";
-import Login from "./components/login.component.vue";
+import Base from "./components/Base.vue";
 
 export default Vue.extend({
   name: "App",
 
   components: {
-    Login
+    Base
   },
 
   data: () => ({
