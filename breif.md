@@ -42,6 +42,7 @@ After loading the repos:
 
 After clicking on a repo, while loading the issues:
 
+
 ``` html
 <ul>
   <li>

@@ -1,0 +1,32 @@
+{
+    "name": "dmg-tech-test",
+    "version": "1.0.0",
+    "description": "dmg tech test",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon ./src/app.js",
+        "test": "jest",
+        "start": "node ./src/app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tane10/DMG-tech-test.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Tane10/DMG-tech-test/issues"
+    },
+    "homepage": "https://github.com/Tane10/DMG-tech-test#readme",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "helmet": "^4.2.0"
+    },
+    "devDependencies": {
+        "jest": "^26.6.3",
+        "nodemon": "^2.0.6"
+    }
+}
